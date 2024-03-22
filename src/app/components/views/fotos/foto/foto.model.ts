@@ -5,5 +5,3 @@ export interface Foto{
     url: String;
     thumbnailUrl: String;
 }
-
-// https://jsonplaceholder.typicode.com/photos/

@@ -1,8 +1,5 @@
-<div class="search">
-    <form>
-        <input class="btn" type="search" placeholder="Pesquisar pelo titulo..." autofocus>
-        <button mat-button color="primary">
-            Buscar
-        </button>
-    </form>
-</div>
+<input class="search"
+    type="search" 
+    [(ngModel)]="filteredTitle"
+    placeholder="Pesquisar imagem pelo texto do título..."
+    (input)="onTitleChange()">
