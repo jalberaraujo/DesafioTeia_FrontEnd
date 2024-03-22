@@ -1,8 +1,8 @@
-<app-search>
+<app-search  [(filteredTitle)] = "filteredTitle">
 </app-search>
 
 <app-paginator [outro] = "fotos">
 </app-paginator>
 
-<app-fotos [fotos]="fotos | filterByTitle: filter">
+<app-fotos [fotos]="fotos | filterByTitle: filteredTitle">
 </app-fotos>
