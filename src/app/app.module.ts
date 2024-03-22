@@ -25,7 +25,7 @@ import { FotoListaComponent } from "./components/views/fotos/foto-lista/foto-lis
 import { FotosComponent } from "./components/views/fotos/foto-lista/fotos/fotos.component";
 import { CardComponent } from "./shared/components/card/card.component";
 import { DarkenOnHoverDirective } from "./shared/directives/darken-on-hover.directive";
-import { FilterByTitle } from "./components/views/fotos/foto-lista/filter-by-title.pipe";
+import { FilterByTitle } from "./pipes/filter-by-title.pipe";
 import { SearchComponent } from "./components/views/fotos/foto-lista/search/search.component";
 import { PaginatorComponent } from './components/views/fotos/foto-lista/paginator/paginator.component';
 import { MatDialogModule } from '@angular/material/dialog';

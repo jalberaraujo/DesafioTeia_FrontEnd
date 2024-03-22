@@ -12,7 +12,7 @@ export class FotoListaComponent implements OnInit {
 
   fotos: Foto[] = [];
   filter: string = '';
-  
+  filteredTitle = '';
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   pgIndex = 0;
   pgSize = 20;
