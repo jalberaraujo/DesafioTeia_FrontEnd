@@ -27,12 +27,12 @@ import { CardComponent } from "./shared/components/card/card.component";
 import { DarkenOnHoverDirective } from "./shared/directives/darken-on-hover.directive";
 import { FilterByTitle } from "./pipes/filter-by-title.pipe";
 import { SearchComponent } from "./components/views/fotos/foto-lista/search/search.component";
-import { PaginatorComponent } from './components/views/fotos/foto-lista/paginator/paginator.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { DialogComponent } from './shared/components/dialog/dialog.component';
 import { ComentarioDialog } from "./shared/components/dialog/comentario-dialog";
-
+import { FilterByPaginator } from "./pipes/filter-by-paginator.pipe";
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 
 @NgModule({
@@ -49,9 +49,9 @@ import { ComentarioDialog } from "./shared/components/dialog/comentario-dialog";
     DarkenOnHoverDirective,
     FilterByTitle,
     SearchComponent,
-    PaginatorComponent,
     DialogComponent,
     ComentarioDialog,
+    FilterByPaginator,
     
     
   ],
@@ -73,6 +73,7 @@ import { ComentarioDialog } from "./shared/components/dialog/comentario-dialog";
     MatDialogModule,
     MatFormFieldModule,
     FormsModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent],

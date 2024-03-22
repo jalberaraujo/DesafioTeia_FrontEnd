@@ -9,6 +9,7 @@ import { Foto } from '../../foto/foto.model';
 export class FotosComponent implements OnChanges {
   
   @Input() fotos: Foto[] = [];
+  // @Input() page: PageEvent | undefined;
   rows: any[] = [];
   
   constructor() { }

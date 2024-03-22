@@ -18,4 +18,6 @@ export class SearchComponent implements OnInit {
         this.filteredTitleChange.emit(this.filteredTitle);
     }
 
+    
+
  }
