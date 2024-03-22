@@ -1,0 +1,30 @@
+<mat-drawer-container class="container">
+    <mat-sidenav mode="side" opened>  
+        <mat-nav-list>
+
+            <a routerLink="" mat-list-item>
+                <i class="material-icons">home</i>Home
+            </a>
+            
+            <a routerLink="fotos/foto-lista" mat-list-item>
+                <i class="material-icons">menu_book</i>Fotos
+            </a>
+
+            <!-- <a mat-list-item>
+                <i class="material-icons">favorite_border</i>Favoritos
+            </a>
+
+            <a mat-list-item>
+                <i class="material-icons">thumb_up</i>Favoritos
+            </a> -->
+            
+
+        </mat-nav-list>
+
+    </mat-sidenav>
+
+    <div class="sidenav-content">
+        <router-outlet></router-outlet>
+    </div>
+
+</mat-drawer-container>

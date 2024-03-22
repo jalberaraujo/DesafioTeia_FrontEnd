@@ -1,0 +1,12 @@
+.header{
+    height:10%;
+}    
+
+span{
+    display: flex;
+    align-items: center;
+}
+
+.espaco {
+    flex: 1 1 auto;
+}

@@ -1,0 +1,19 @@
+input {
+  height: 2.5rem;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.search {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+button {
+    margin-left: 20px;
+    font-size: 14pt;
+}
+
+
+
+
