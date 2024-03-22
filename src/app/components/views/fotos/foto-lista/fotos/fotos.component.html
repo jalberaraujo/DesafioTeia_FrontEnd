@@ -1,16 +1,18 @@
-<p class="text-center text-muted" *ngIf="!fotos.length">
-  Nenhuma foto disponível
-</p>
+<div>
+  <p class="text-center text-muted" *ngIf="!fotos.length">
+    Nenhuma foto disponível
+  </p>
 
-<ol class="list-unstyled">
-  <li *ngFor="let cols of rows" class="row">
+  <ol class="list-unstyled">
+    <li *ngFor="let cols of rows" class="row">
 
-    <div *ngFor="let foto of cols" class="card-foto" apDarkenOnHover>
+      <div *ngFor="let foto of cols" class="card-foto" apDarkenOnHover>
 
-      <a [routerLink]="['/detalhes', foto.id]">
-        <app-card [title] = "foto.title" [url] = "foto.thumbnailUrl"></app-card>
-      </a>
+        <a [routerLink]="['/detalhes', foto.id]">
+          <app-card [title]="foto.title" [url]="foto.thumbnailUrl"></app-card>
+        </a>
 
-    </div>
-  </li>
-</ol>
+      </div>
+    </li>
+  </ol>
+</div>

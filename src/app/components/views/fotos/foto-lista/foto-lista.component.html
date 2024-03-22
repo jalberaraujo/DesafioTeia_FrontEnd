@@ -1,8 +1,17 @@
-<app-search  [(filteredTitle)] = "filteredTitle">
-</app-search>
+<div class="container" *ngIf="fotos">
+    <app-search [(filteredTitle)]="filteredTitle">
+    </app-search>
 
-<app-paginator [outro] = "fotos">
-</app-paginator>
+    <mat-paginator [length]="length" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions" [pageIndex]="pageIndex"
+        (page)="setPageSizeOptions($event)" aria-label="Selecione a página">
+    </mat-paginator>
 
-<app-fotos [fotos]="fotos | filterByTitle: filteredTitle">
-</app-fotos>
+    <div *ngIf="fotos; else carregando">
+        <app-fotos [fotos]="fotos | filterByTitle: filteredTitle | filterByPaginator: pageEvent">
+        </app-fotos>
+    </div>
+
+    <ng-template #carregando>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </ng-template>
+</div>

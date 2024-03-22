@@ -7,10 +7,5 @@ textarea{
 .titulo{
   font-size: 1.5rem;
   font-weight: bold;
-  width: 500px;
+  width: 100%;
 }
-/* :host {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-} */
