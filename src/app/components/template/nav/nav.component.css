@@ -2,13 +2,10 @@
   height: 85%;
 }
 
-i {
-  padding-right: 0.5rem;
+.content {
+  padding: 3rem;;
 }
 
-.sidenav-content {
-  display: flex;
-  height: 100%;
-  /* align-items: center;  */
-  justify-content: center;
+i {
+  padding-right: 0.5rem;
 }

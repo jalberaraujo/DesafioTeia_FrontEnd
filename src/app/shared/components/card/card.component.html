@@ -1,6 +1,21 @@
-<div class="card border-light text-center">
-    <h4 class="card-header" *ngIf="title">{{ title }}</h4>
-    <div class="card-block text-justify">
-        <ng-content></ng-content>
-    </div>
-</div>
+<mat-card class="card mat-elevation-z4">
+    <img mat-card-image src="{{ url }}">
+    <mat-card-content>
+      <p class= "card-title">
+        {{ title }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions class="card-buttons">
+
+      <button mat-icon-button color="warn" aria-label="Gostei"  (click)="favoritar()" *ngIf="ehFavorito">
+        <mat-icon>favorite</mat-icon>
+      </button>
+
+      <button mat-icon-button aria-label="Gostei"  (click)="favoritar()" *ngIf="!ehFavorito">
+        <mat-icon>favorite_border</mat-icon>
+      </button>
+      
+      <app-dialog></app-dialog>
+      
+    </mat-card-actions>
+  </mat-card>

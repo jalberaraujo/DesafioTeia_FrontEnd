@@ -1,0 +1,12 @@
+.row{
+    display: flex;
+}
+
+.card-foto{
+    margin: 2.5rem;
+    height: 400px;
+    width: 300px;
+}
+
+
+

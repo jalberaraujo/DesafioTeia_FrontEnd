@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FotoService } from '../foto/foto.service';
 import { Foto } from '../foto/foto.model';
+import { MatPaginator } from '@angular/material/paginator';
 
 @Component({
   selector: 'app-foto-lista',
@@ -11,7 +12,10 @@ export class FotoListaComponent implements OnInit {
 
   fotos: Foto[] = [];
   filter: string = '';
-  hasMore: boolean = true;
+  
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
+  pgIndex = 0;
+  pgSize = 20;
 
   constructor(private fotoService: FotoService) { }
 
@@ -24,8 +28,7 @@ export class FotoListaComponent implements OnInit {
       .findAll()
       .subscribe(fotos => {
         this.filter = '';
-        this.fotos = this.fotos.concat(fotos);
-        if(!fotos.length) this.hasMore = false;
+        this.fotos = fotos;
       });
   }
 

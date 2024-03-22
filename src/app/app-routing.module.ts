@@ -6,13 +6,17 @@ import { FotoListaComponent } from './components/views/fotos/foto-lista/foto-lis
 const routes: Routes = [
   {
     path: "",
-    component: HomeComponent
-  }
-  ,
+    component: FotoListaComponent
+  },
   {
     path: "fotos/foto-lista",
     component: FotoListaComponent
+  },
+  {
+    path: "home",
+    component: HomeComponent
   }
+
 ];
 
 @NgModule({

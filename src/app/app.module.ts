@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { FormsModule } from '@angular/forms';
 import { RouterModule } from "@angular/router";
 import { BrowserModule } from "@angular/platform-browser";
 import { HttpClientModule } from "@angular/common/http";
@@ -23,9 +24,15 @@ import { FotoComponent } from "./components/views/fotos/foto/foto.component";
 import { FotoListaComponent } from "./components/views/fotos/foto-lista/foto-lista.component";
 import { FotosComponent } from "./components/views/fotos/foto-lista/fotos/fotos.component";
 import { CardComponent } from "./shared/components/card/card.component";
-import { DarkenOnHoverDirective } from "./shared/directies/darken-on-hover.directive";
+import { DarkenOnHoverDirective } from "./shared/directives/darken-on-hover.directive";
 import { FilterByTitle } from "./components/views/fotos/foto-lista/filter-by-title.pipe";
 import { SearchComponent } from "./components/views/fotos/foto-lista/search/search.component";
+import { PaginatorComponent } from './components/views/fotos/foto-lista/paginator/paginator.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { DialogComponent } from './shared/components/dialog/dialog.component';
+import { ComentarioDialog } from "./shared/components/dialog/comentario-dialog";
+
 
 
 @NgModule({
@@ -42,6 +49,11 @@ import { SearchComponent } from "./components/views/fotos/foto-lista/search/sear
     DarkenOnHoverDirective,
     FilterByTitle,
     SearchComponent,
+    PaginatorComponent,
+    DialogComponent,
+    ComentarioDialog,
+    
+    
   ],
   imports: [
     CommonModule,
@@ -58,6 +70,9 @@ import { SearchComponent } from "./components/views/fotos/foto-lista/search/sear
     MatCardModule,
     HttpClientModule,
     RouterModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -7,4 +7,14 @@ import { Component, Input } from '@angular/core';
 })
 export class CardComponent { 
   @Input() title: string = '';
+  @Input() url: string = '';
+  ehFavorito: boolean = false;
+
+  favoritar(){
+    this.ehFavorito = this.ehFavorito? false : true;
+    console.log(this.ehFavorito);
+  }
+  
 }
+
+

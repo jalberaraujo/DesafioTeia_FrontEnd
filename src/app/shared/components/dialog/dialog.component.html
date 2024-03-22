@@ -1,0 +1,7 @@
+<button mat-icon-button aria-label="Faça seu comentário :)"  (click)="openDialog()" *ngIf="comentario == ''">
+  <mat-icon class="icon-sem-comentario">chat_bubble</mat-icon>
+</button>
+
+<button mat-icon-button color="primary" aria-label="Faça seu comentário :)"  (click)="openDialog()" *ngIf="comentario!=''">
+  <mat-icon>chat_bubble</mat-icon>
+</button>

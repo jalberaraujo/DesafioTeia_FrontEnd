@@ -1,11 +1,8 @@
 <app-search>
 </app-search>
 
-<app-fotos
-    [fotos]="fotos | filterByTitle: filter">
-</app-fotos> 
+<app-paginator [outro] = "fotos">
+</app-paginator>
 
-<!-- <app-load-button 
-    (click)="load()" 
-    [hasMore]="hasMore">
-</app-load-button> -->
+<app-fotos [fotos]="fotos | filterByTitle: filter">
+</app-fotos>

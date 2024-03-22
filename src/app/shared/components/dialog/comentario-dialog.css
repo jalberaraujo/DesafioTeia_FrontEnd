@@ -1,0 +1,15 @@
+
+textarea{
+  width: 443px;
+  height: 10rem;
+}
+
+.titulo{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/* :host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */

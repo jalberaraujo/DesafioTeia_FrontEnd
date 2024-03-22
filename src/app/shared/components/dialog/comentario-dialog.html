@@ -1,0 +1,14 @@
+
+<div mat-dialog-content>
+   
+    <mat-form-field appearance="fill">
+      <span class="titulo">Deixe o seu comentário</span>
+      <textarea matInput [(ngModel)]="data.comentario"></textarea>
+      <div mat-dialog-actions>
+        <button mat-button [mat-dialog-close]="data.comentario" cdkFocusInitial>Salvar</button>
+        <button mat-button (click)="onNoClick()">Sair</button>
+        
+      </div>
+    </mat-form-field>
+
+</div>
